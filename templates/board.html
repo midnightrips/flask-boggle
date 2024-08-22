@@ -4,12 +4,12 @@
 
 {% block content %}
 {{board}}
-<form action="/guess" method="POST">
+<form action="/guess"> <!--action="/guess"-->
     <label for="guess">Your guess: </label>
     <input type="text" name="guess" id="guess">
     <button id="submit">GUESS</button>
 </form>
 <div>
-    <p>{{JSON}}</p>
+    <p id="result">{{JSON}}</p>
 </div>
 {% endblock %}
